@@ -12,13 +12,13 @@
 </head>
 
 <body>
-  <nav class="navbar bg-body-tertiary">
+  <nav class="navbar bg-body-tertiary"> <!--Nav principal-->
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#"> <!--Logo-->
         <i class="fa-brands fa-instagram"></i>
         <strong> Instagram</strong>
       </a>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end"> <!--Botones de post y herrameintas-->
         <button type="button" class="btn btn-success btn-md" data-bs-toggle="modal" data-bs-target="#exampleModal"
           data-bs-whatever="@fat">Create a new post</button>
 
@@ -59,21 +59,53 @@
             <i class="fa-solid fa-gear"></i>
           </button>
           <ul class="dropdown-menu dropdown-menu-end" >
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+
+  
+  <ul class="nav nav-tabs justify-content-center " id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Grid</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+
+
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-0 col-md-4">test 1</div>
+            <div class="col-0 col-md-4">test 2</div>
+            <div class="col-0 col-md-4">test 3</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+  
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-</body>
+
+  </body>
 
 </html>
