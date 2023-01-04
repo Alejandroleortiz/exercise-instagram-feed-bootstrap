@@ -1,5 +1,12 @@
-.img-fluid{
+#img-fix{
     height: 450px !important;
     width: 100% !important;
     object-fit: cover;
+}
+#fecha{
+    font-size: smaller;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
 }
